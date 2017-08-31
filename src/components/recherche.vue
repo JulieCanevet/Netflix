@@ -1,7 +1,7 @@
 <template>
   <div id="recherche">
   	<form v-on:submit.prevent="send">
-      <input v-model="titre" id="search" type="text" placeholder="Entrez le titre de la série">
+      <input v-model="titre" id="search" type="text" placeholder="Entrez le titre de la série (exemple : breaking bad)">
       <button id="envoi" type="submit">Rechercher une série</button>
   	</form>
   </div>
@@ -32,13 +32,14 @@ export default {
 }
 
 #search {
-  width: 30%;
+  width: 50%;
 }
 
 #envoi, #search  {
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   margin-left: 1em;
+  font-size: 20px;
 }
 #envoi:hover {
 	cursor: pointer; 
